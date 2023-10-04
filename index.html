@@ -1,0 +1,73 @@
+<!-- Start At 1/10/2023 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>CRUDS</h1>
+            <p>Product Management System</p>
+        </div>
+        <!-- __________________________________________________- -->
+        <div class="form">
+            <input  type="text" placeholder="title" id="title">
+            <div class="price">
+                <input onkeyup="gtotal()" type="number" placeholder="Price" id="price">
+                <input onkeyup="gtotal()" type="number" placeholder="taxes" required id="taxes">
+                <input onkeyup="gtotal()" type="number" placeholder="ads" required id="ads">
+                <input onkeyup="gtotal()" type="number" placeholder="discount" required id="discount">
+                <small id="tot"></small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="creat" >Creat</button>
+        </div>
+        <!-- __________________________________________________- -->
+        <div class="result">
+            <div class="search">
+                <input type="text" onkeyup="datasearch(this.value)" id="search" placeholder="Search">
+                <div class="bs">
+                    <button id="seacrchtitle" onclick="search(this.id)">Search By Title </button>
+                    <button id="seacrchcategory" onclick="search(this.id)">Search By Category </button>
+                </div>
+            </div>
+            <table id="tabel">
+                <button id="deletall" onclick="deleall()"></button>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>ubdate</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                    
+                    
+                    
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+    <!-- Start Landing Page -->
+    
+    <!-- <script src="./JS/index.js"></script> -->
+    <script src="./JS/edit.js"></script>
+</body>
+</html>
+
+
+<!-- Ent At 4/10/2023 -->

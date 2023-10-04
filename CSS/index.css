@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.container .title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+    
+}
+.container .form{
+    margin-top: 100px;
+}
+.container .form input{
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 5px 0;
+    border-radius: 10px 0;
+    color: white;
+    transition: .3s;
+    
+}
+.container .form input:focus{
+    background-color: #000;
+    transform: scale(1.05) ;
+}
+.container .form .price input{
+    width: 20%;
+}
+.container .form .price #tot{
+    background-color: rgb(51, 51, 112);
+    padding: 5px;
+    border-radius: 5px;
+}
+.container .form .price #tot::before{
+    content: 'Total : ';
+}
+.container .form #creat{
+    width: 100%;
+    cursor: pointer;
+    height: 30px;
+    
+}
+button{
+    border:none;
+    border-radius: 10px 0;
+    padding: 5px;
+    color: white;
+    background-color: rgb(46, 46, 141);
+    transition: .3s;
+}
+button:hover{
+    background-color: rgb(68, 68, 152);
+    transform: scale(1.05);
+    letter-spacing: 1.5px;
+}
+/* _____________ */
+.container .result .search input{
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 5px 0;
+    border-radius: 10px 0;
+    color: white;
+    transition: .3s;
+}
+.container .result .search input:focus{
+    background-color: #000;
+    transform: scale(1.05) ;
+}
+.container .result .search .bs{
+    display: flex;
+    justify-content: space-between;
+}
+.container .result .search .bs button{
+    cursor: pointer;
+    width: 45%;
+    height: 30px;
+    border:none;
+    border-radius: 10px 0;
+    color: white;
+    background-color: rgb(46, 46, 141);
+    transition: .3s;
+}
+.container .result .search .bs button:hover{
+    background-color: rgb(68, 68, 152);
+    transform: scale(1.05);
+    letter-spacing: 1.5px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+
+td button:hover{
+    letter-spacing: 0px;
+}
+
+#deletall{
+    width: 100%;
+    margin: 10px 0;
+}
