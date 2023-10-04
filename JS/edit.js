@@ -88,9 +88,10 @@ creat.onclick = function () {
     // ShowData();
     localStorage.setItem("product", JSON.stringify(datapro));
     [...inputs].forEach((ele) => (ele.value = ""));
+    window.location.reload()
   }
-  ShowData()
   gtotal()
+  ShowData()
 };
 
 /* The End  */
